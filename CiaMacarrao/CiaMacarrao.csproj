@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9FCC2DAF-6F35-40DE-8E4C-6F3465D66DBA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CiaMacarrao</RootNamespace>
+    <AssemblyName>CiaMacarrao</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BebidasCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BebidasCadastrar.Designer.cs">
+      <DependentUpon>BebidasCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BebidasConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BebidasConsultar.Designer.cs">
+      <DependentUpon>BebidasConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexao.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngredienteCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngredienteCadastrar.Designer.cs">
+      <DependentUpon>IngredienteCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngredienteConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngredienteConsultar.Designer.cs">
+      <DependentUpon>IngredienteConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MassaCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MassaCadastrar.Designer.cs">
+      <DependentUpon>MassaCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MassaConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MolhoCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MolhoCadastrar.Designer.cs">
+      <DependentUpon>MolhoCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MolhoConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MolhoConsultar.Designer.cs">
+      <DependentUpon>MolhoConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidoCadastrar.Designer.cs">
+      <DependentUpon>PedidoCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuarioConsultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuarioConsultar.Designer.cs">
+      <DependentUpon>UsuarioConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.cs" />
+    <EmbeddedResource Include="BebidasCadastrar.resx">
+      <DependentUpon>BebidasCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BebidasConsultar.resx">
+      <DependentUpon>BebidasConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngredienteCadastrar.resx">
+      <DependentUpon>IngredienteCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngredienteConsultar.resx">
+      <DependentUpon>IngredienteConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MassaCadastrar.resx">
+      <DependentUpon>MassaCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MassaConsultar.resx">
+      <DependentUpon>MassaConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MolhoCadastrar.resx">
+      <DependentUpon>MolhoCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MolhoConsultar.resx">
+      <DependentUpon>MolhoConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidoCadastrar.resx">
+      <DependentUpon>PedidoCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidoConsultar.resx">
+      <DependentUpon>PedidoConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UsuarioConsultar.resx">
+      <DependentUpon>UsuarioConsultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cia_macarrao.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
